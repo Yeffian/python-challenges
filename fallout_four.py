@@ -15,5 +15,6 @@ while True:
 
     if answer.upper() == word:
         print('Correct! Welcome to ROBCO Industries')
+        break
     else:
         print('Incorrect. Likeness value is ' + str(calculate_likeness(word, answer.upper())))
