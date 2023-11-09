@@ -20,5 +20,3 @@ def XOR(A, B):
     two = NAND(A, one)
     three = NAND(B, one)
     return NAND(two, three)
-
-print(XOR(1, 1))
