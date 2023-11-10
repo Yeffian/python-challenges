@@ -12,4 +12,3 @@ def dernary_to_bcd(n):
 
 dernary = input('Enter your denary number: ')
 print(int(dernary) + ' in BCD is ' + dernary_to_bcd(int(dernary_to_bcd)))
-    
