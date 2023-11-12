@@ -9,7 +9,6 @@ class DoorState(Enum):
     PAUSED_WHILE_CLOSING = 5
 
 def garage_door(input):
-    paused = False
     state = DoorState.CLOSED
 
     for event in input.splitlines():
@@ -21,16 +20,10 @@ def garage_door(input):
                 state = DoorState.OPENING
             elif state is DoorState.OPENED:
                 state = DoorState.CLOSING
-            elif state is DoorState.CLOSING and paused is False:
+            elif state is DoorState.CLOSING:
                 state = DoorState.PAUSED_WHILE_CLOSING
-            elif state is DoorState.OPENING and paused is False:
+            elif state is DoorState.OPENING:
                 state = DoorState.PAUSED_WHILE_OPENING
-            elif state is DoorState.CLOSING and paused is True:
-                state = DoorState.PAUSED_WHILE_CLOSING
-                paused = False
-            elif state is DoorState.OPENING and paused is True:
-                state = DoorState.PAUSED_WHILE_OPENING
-                paused = False
             elif state is DoorState.PAUSED_WHILE_CLOSING:
                 state = DoorState.OPENING
             elif state is DoorState.PAUSED_WHILE_OPENING:
