@@ -13,7 +13,7 @@ def binary_search(n, t, r):
         else:
             return mid
 
-    if r == 0:
+    if r == 0:          
         return -1
     else:
         return binary_search(n, t, r-1)
