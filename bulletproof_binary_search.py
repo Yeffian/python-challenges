@@ -8,7 +8,7 @@ def binary_search(n, t, r):
 
         if n[mid] < t:
             low = mid + 1
-        elif n[mid] > t:
+        elif n[mid] > t:    
             high = mid - 1
         else:
             return mid
