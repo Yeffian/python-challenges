@@ -1,1 +1,1 @@
-print(84767346579 * 192482734)
+print(22/7) # the value of pi
