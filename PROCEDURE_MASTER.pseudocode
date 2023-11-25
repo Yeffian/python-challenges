@@ -1,0 +1,7 @@
+PROCEDURE Line(SIZE: INTEGER)
+    DECLARE DrawnPixels : INTEGER
+    WHILE DrawnPixels > SIZE DO
+        OUTPUT '-'
+        DrawnPixels <- DrawnPixels + 1
+    ENDWHILE
+ENDPROCEDURE
