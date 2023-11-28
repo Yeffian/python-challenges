@@ -70,3 +70,4 @@ else:
 
 you.setter(char_name)
 you.print_me()
+
