@@ -1,4 +1,4 @@
-import collections
+import collections_problem
 
 def find_password(text):
     most_freq = []
